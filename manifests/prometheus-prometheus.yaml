@@ -18,7 +18,7 @@ spec:
       port: web
   enableFeatures: []
   externalLabels: {}
-  image: quay.io/prometheus/prometheus:v3.13.1
+  image: cgr.dev/autonomize.ai/prometheus:3.13.5
   nodeSelector:
     kubernetes.io/os: linux
   podMetadata:

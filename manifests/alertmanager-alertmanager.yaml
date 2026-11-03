@@ -11,7 +11,7 @@ metadata:
   namespace: monitoring
 spec:
   alertmanagerConfigSelector: {}
-  image: quay.io/prometheus/alertmanager:v0.33.1
+  image: cgr.dev/autonomize.ai/prometheus-alertmanager:0.34.2
   nodeSelector:
     kubernetes.io/os: linux
   podMetadata:

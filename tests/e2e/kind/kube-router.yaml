@@ -47,7 +47,7 @@ spec:
       serviceAccountName: kube-router
       containers:
         - name: kube-router
-          image: docker.io/cloudnativelabs/kube-router
+          image: cgr.dev/autonomize.ai/kube-router:latest
           imagePullPolicy: Always
           args:
             - --run-router=true
@@ -86,7 +86,7 @@ spec:
               readOnly: false
       initContainers:
         - name: install-cni
-          image: docker.io/cloudnativelabs/kube-router
+          image: cgr.dev/autonomize.ai/kube-router:latest
           imagePullPolicy: Always
           command:
             - /bin/sh
